@@ -116,7 +116,7 @@ scripts/          Utilidades (generar hash de admin)
 
 - El descuento de stock no es transaccional: dos compras simultáneas del último ítem podrían superar el stock. La mejora prevista es una función RPC en PostgreSQL.
 - Hay bloqueo por intentos fallidos en logins y códigos promocionales, pero no un límite general de peticiones por IP; en producción se complementa con las reglas de rate limit del firewall de Vercel.
-- Los pedidos sin comprobante descuentan stock igualmente: falta una reserva con tiempo de expiración. Por el momento los administradores prefieren manejarlo asi.
+- Los pedidos sin comprobante descuentan stock igualmente: falta una reserva con tiempo de expiración. Por el momento los administradores prefieren manejarlo así.
 
 ## Autor
 
