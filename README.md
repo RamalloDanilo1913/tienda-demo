@@ -1,12 +1,12 @@
 # Tienda Filial — Plataforma de e-commerce multivendedor
 
-Sistema web de tienda online para una filial de hinchas: combina una tienda oficial con un marketplace donde los socios publican sus propios productos y servicios, todo moderado desde un panel de administración. Reemplaza una solución artesanal en Google Apps Script por una aplicación Next.js + Supabase.
+Sistema web de tienda online para una filial de Talleres de Córdoba: combina una tienda oficial con un marketplace donde los socios publican sus propios productos y servicios, todo moderado desde un panel de administración. Reemplaza una solución artesanal en Google Apps Script por una aplicación Next.js + Supabase.
 
 > **Versión demo.** Este repositorio no contiene datos reales, claves ni configuración de producción, y usa marca genérica. La versión que corre en producción es privada porque maneja datos personales de usuarios.
 
 ## El problema que resuelve
 
-Vender productos de la filial y los emprendimientos de sus socios implicaba coordinar precios, stock, transferencias y comprobantes por WhatsApp y planillas sueltas. Esta plataforma ordena todo en un solo lugar:
+Vender productos de la filial y los emprendimientos de sus socios implicaba spam en el grupo de WhatsApp, problemas al contar el stock, transferencias y comprobantes por WhatsApp y planillas sueltas. Esta plataforma ordena todo en un solo lugar:
 
 - **El comprador** arma su carrito, paga por transferencia y sube el comprobante.
 - **El socio vendedor** publica y gestiona sus productos y servicios, y ve sus propias ventas.
@@ -22,7 +22,7 @@ Vender productos de la filial y los emprendimientos de sus socios implicaba coor
 - Directorio de servicios ofrecidos por socios, con contacto directo por WhatsApp.
 - Emails transaccionales automáticos al comprador, al administrador y a cada vendedor involucrado.
 
-### Portal de socios
+### Portal de socios vendedores
 - Ingreso con DNI y clave.
 - Alta y edición de productos y servicios, que quedan pendientes de aprobación.
 - Gestión de stock por variante, baja y reactivación de publicaciones, y producto destacado.
@@ -116,8 +116,7 @@ scripts/          Utilidades (generar hash de admin)
 
 - El descuento de stock no es transaccional: dos compras simultáneas del último ítem podrían superar el stock. La mejora prevista es una función RPC en PostgreSQL.
 - Hay bloqueo por intentos fallidos en logins y códigos promocionales, pero no un límite general de peticiones por IP; en producción se complementa con las reglas de rate limit del firewall de Vercel.
-- Los pedidos sin comprobante descuentan stock igualmente: falta una reserva con tiempo de expiración.
-- Sin suite de tests automatizados.
+- Los pedidos sin comprobante descuentan stock igualmente: falta una reserva con tiempo de expiración. Por el momento los administradores prefieren manejarlo asi.
 
 ## Autor
 
