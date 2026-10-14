@@ -4,7 +4,7 @@ Sistema web de tienda online para una filial de Talleres de Córdoba: combina un
 
 > **Versión demo.** Este repositorio no contiene datos reales, claves ni configuración de producción, y usa marca genérica. La versión que corre en producción es privada porque maneja datos personales de usuarios.
 
-![Tienda Online](tienda-demo/tienda.png)
+![Tienda Online](/tienda.png)
 
 ## El problema que resuelve
 
