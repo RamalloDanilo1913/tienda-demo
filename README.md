@@ -4,6 +4,8 @@ Sistema web de tienda online para una filial de Talleres de Córdoba: combina un
 
 > **Versión demo.** Este repositorio no contiene datos reales, claves ni configuración de producción, y usa marca genérica. La versión que corre en producción es privada porque maneja datos personales de usuarios.
 
+![Tienda Online](tienda-demo/tienda.png)
+
 ## El problema que resuelve
 
 Vender productos de la filial y los emprendimientos de sus socios implicaba spam en el grupo de WhatsApp, problemas al contar el stock, transferencias y comprobantes por WhatsApp y planillas sueltas. Esta plataforma ordena todo en un solo lugar:
