@@ -124,4 +124,4 @@ scripts/          Utilidades (generar hash de admin)
 
 **Danilo Ramallo** — Estudiante de Ingeniería Electrónica · Desarrollo web y ciberseguridad
 
-[LinkedIn](https://www.linkedin.com/in/danilo-ramallo-9877a6289)
+[LinkedIn](https://www.linkedin.com/in/daniloramallo)
